@@ -1,7 +1,21 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #293133;
+}
+
+/* NAVBAR */
 nav {
   display: flex;
   flex-direction: column;
@@ -13,20 +27,26 @@ nav {
 
 nav a {
   display: inline-block;
-  height: 30px;
-  line-height: 30px;
+  height: 50px;
+  line-height: 50px;
   padding-left: 10px;
   padding-right: 10px;
+  color:white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(16,19,20);
 }
 
 #nav-top {
   display: flex;
   justify-content: space-between;
-  background: gray;
+  background: #343a40;
 }
 
 #nav-bottom {
-  background: gray;
+  background: #343a40;
   width: 100px;
 }
 
@@ -36,6 +56,7 @@ nav a {
 
 #burger {
   display: none;
+  font-size: 25px;
 }
 
 #burger-menu a {
@@ -58,11 +79,6 @@ nav a {
   }
 }
 
-main {
-  margin-top: 50px;
-  height: 1000px;
-}
-
 .anchor-box {
   position: relative;
 }
@@ -72,7 +88,107 @@ main {
   top: -50px;
 }
 
+/* MAIN */
+main {
+  padding-bottom: 50px;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: rgb(16,19,20);
+  color: white;
+}
+
+.fab.fa-github {
+  font-size: 40px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100vh;
+}
+
+a:hover {
+  color: white; 
+}
+
+#projects {
+  background-color: #293133;
+  padding-top: 50px;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.project-tile {
+  background-color: rgba(16,19,20,0.5);
+  margin: 20px;
+  width: 450px;
+  border-radius: 1%;
+  box-shadow: 0 0 35px rgba(0,0,0,0.3);
+}
+
+.project-description {
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+img {
+  padding: 20px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#skills h2, #projects h2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+
+#skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 800px;
+  justify-content: space-around;
+}
+
+#skills-container i {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
+
+p {
+  color: white;
+}
+
+/* FOOTER */
 footer {
   position: fixed;
   bottom: 0;
+  background: #343a40;
+  width: 100%;
+  color: white;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+footer a {
+  display: inline-block;
+  width: 100%;
+  color: white;
 }
