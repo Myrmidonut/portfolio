@@ -8,7 +8,7 @@ burger.addEventListener("click", e => {
 })
 
 burgerMenuLink.forEach(e => {
-  e.addEventListener("click", e => {
+  e.addEventListener("click", () => {
     navBottom.classList.toggle("nav-bottom-hide")
   })
 })
