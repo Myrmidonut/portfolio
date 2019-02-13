@@ -1,0 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+nav a {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#nav-top {
+  display: flex;
+  justify-content: space-between;
+  background: gray;
+}
+
+#nav-bottom {
+  background: gray;
+  width: 100px;
+}
+
+.nav-bottom-hide {
+  display: none;
+}
+
+#burger {
+  display: none;
+}
+
+#burger-menu a {
+  display: block;
+}
+
+@media screen and (max-width: 400px) {
+  #full-menu {
+    display: none;
+  }
+
+  #burger {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  #nav-bottom {
+    display: none;
+  }
+}
+
+main {
+  margin-top: 50px;
+  height: 1000px;
+}
+
+.anchor-box {
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  top: -50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
