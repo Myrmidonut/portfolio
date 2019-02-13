@@ -111,10 +111,6 @@ h1 {
   line-height: 100vh;
 }
 
-a:hover {
-  color: white; 
-}
-
 #projects {
   background-color: #293133;
   padding-top: 50px;
@@ -135,6 +131,16 @@ a:hover {
   width: 450px;
   border-radius: 1%;
   box-shadow: 0 0 35px rgba(0,0,0,0.3);
+}
+
+.project-tile a {
+  color: white;
+  text-decoration: none;
+}
+
+.project-tile a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .project-description {
