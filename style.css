@@ -65,7 +65,7 @@ nav a:hover {
 
 #nav-bottom {
   background: #343a40;
-  width: 100px;
+  width: 180px;
 }
 
 .nav-bottom-hide {
@@ -81,7 +81,7 @@ nav a:hover {
   display: block;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   #full-menu {
     display: none;
   }
@@ -91,7 +91,7 @@ nav a:hover {
   }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   #nav-bottom {
     display: none;
   }
@@ -153,6 +153,15 @@ main {
   xmargin-bottom: 25px;
 }
 
+#fcc-introduction {
+  margin: 20px;
+  text-align: center;
+}
+
+#projects-container p a {
+  color: white;
+}
+
 .project-tile {
   background-color: rgba(16,19,20,0.5);
   margin: 20px;
@@ -174,15 +183,18 @@ main {
 .project-description {
   color: white;
   padding: 25px;
+  padding-bottom: 0;
   text-align: center;
 }
 
 .project-description h3 {
   font-size: 30px;
+  margin-top: 0;
 }
 
 p {
   color: white;
+  font-size: 20px;
 }
 
 img {

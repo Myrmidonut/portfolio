@@ -15,10 +15,12 @@
 <body>
   <nav>
     <div id="nav-top">
+
       <div>
         <a href="#" id="home">Home</a>
         <span id="full-menu">
           <a href="#projects-anchor">Projects</a>
+          <a href="#freecodecamp-anchor">freeCodeCamp</a>
           <a href="#skills-anchor">Skills</a>
         </span>
       </div>
@@ -29,6 +31,7 @@
     <div id="nav-bottom" class="nav-bottom-hide">
       <span id="burger-menu">
         <a class="burger-menu-link" href="#projects-anchor">Projects</a>
+        <a class="burger-menu-link" href="#freecodecamp-anchor">freeCodeCamp</a>
         <a class="burger-menu-link" href="#skills-anchor">Skills</a>
       </span>
     </div>
@@ -43,25 +46,79 @@
       <span id="projects-anchor" class="anchor"></span>
 
       <h2>Projects:</h2>
+
       <div id="projects-container">
         <div class="project-tile">
-          <a href="https://myrmidonut.github.io/03_product_landing_page/index.html" target="_blank">
-            <img src="https://s19.postimg.cc/l674qjglf/03_prod_lan_preview.jpg" alt="Website of a supermarket."/>
+          <a href="https://peaceful-oasis-32890.herokuapp.com" target="_blank">
+            <img src="secret-santa.jpg" alt="Secret Santa App"/>
             <div class="project-description">
-              <h3>Product Landing Page</h3>
-              <p>A storefront for a supermarket.</p>
-              <p>HTML5, CSS3, JS</p>
+              <h3>Secret Santa</h3>
+              <p>A web application for organizing secret santa groups.</p>
+              <p>
+                Angular<br>
+                Express<br>
+                Passport<br>
+                MongoDB
+              </p>
+              <p><a href="https://github.com/Myrmidonut/secret-santa" target="_blank">GitHub</a></p>
             </div>
           </a>
         </div>
   
         <div class="project-tile">
-          <a href="https://myrmidonut.github.io/04_technical_documentation_page/index.html" target="_blank">
-            <img src="https://s19.postimg.cc/v3i5jlghf/04_tech_doc_preview.jpg" alt="Website of the programming language Python."/>
+          <a href="https://fathomless-escarpment-99576.herokuapp.com" target="_blank">
+            <img src="etch-a-sketch.jpg" alt="Etch-A-Sketch App"/>
             <div class="project-description">
-              <h3>Technical Documentation</h3>
-              <p>Technical information for the programming language Python.</p>
-              <p>HTML5, CSS3, JS</p>
+              <h3>Etch-A-Sketch</h3>
+              <p>An online pixelated drawing board based on Etch-A-Sketch.</p>
+              <p>
+                React<br>
+                Laravel<br>
+                Passport<br>
+                PostgreSQL
+              </p>
+              <p><a href="https://github.com/Myrmidonut/etch-a-sketch" target="_blank">GitHub</a></p>
+            </div>
+          </a>
+        </div>
+    </section>
+
+    <section id="projects" class="anchor-box">
+      <span id="freecodecamp-anchor" class="anchor"></span>
+
+      <h2>freeCodeCamp:</h2>
+
+      <div id="projects-container">
+        <p id="fcc-introduction">
+          The following projects are part of the <a href="https://learn.freecodecamp.org" target="_blank" alt="freeCodeCamp">freeCodeCamp</a> curriculum.
+        </p>
+
+        <div class="project-tile">
+          <a href="https://myrmidonut.github.io/fcc_responsive_product_landing" target="_blank">
+            <img src="product-landing-page.jpg" alt="Product Landing Page"/>
+            <div class="project-description">
+              <h3>Storefront</h3>
+              <p>A product landing page for a supermarket.</p>
+              <p>
+                HMTL5<br>
+                CSS3<br>
+                Javascript
+              </p>
+              <p><a href="https://github.com/Myrmidonut/fcc_responsive_product_landing" target="_blank" alt="GitHub">GitHub</a></p>
+            </div>
+          </a>
+        </div>
+  
+        <div class="project-tile">
+          <a href="https://myrmidonut.github.io/fcc_frontend_pomodoro_clock" target="_blank">
+            <img src="pomodoro.jpg" alt="Pomodoro Clock"/>
+            <div class="project-description">
+              <h3>Pomodoro Clock</h3>
+              <p>A Pomodoro Clock with alternating work and break timers and three different color themes.</p>
+              <p>
+                React
+              </p>
+              <p><a href="https://github.com/Myrmidonut/fcc_frontend_pomodoro_clock" target="_blank" alt="GitHub">GitHub</a></p>
             </div>
           </a>
         </div>
@@ -78,12 +135,20 @@
         </div>
       </div>
     </section>
+
+
+
+
+
+
   
     <section id="skills" class="anchor-box">
       <span id="skills-anchor" class="anchor"></span>
 
       <h2>Skills:</h2>
+
       <div id="skills-container">
+
         <div class="skills-group">
           <h3>Frontend:</h3>
           <i class="fab fa-html5"></i>
