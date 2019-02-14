@@ -8,11 +8,19 @@ html {
 }
 
 * {
-  font-family: "Lato", sans-serif;
+  xfont-family: "Lato", sans-serif;
+  font-family: "grenadier";
+  letter-spacing: 5px;
 }
 
 body {
-  background-color: #293133;
+  xbackground-color: #293133;
+  background-image: url("pattern-grayscale.jpg");
+}
+
+@font-face {
+  font-family: "grenadier";
+  src: url("GrenadierNF.ttf");
 }
 
 /* NAVBAR */
@@ -28,11 +36,16 @@ nav {
 nav a {
   display: inline-block;
   height: 50px;
-  line-height: 50px;
+  line-height: 54px;
   padding-left: 10px;
   padding-right: 10px;
   color:white;
   text-decoration: none;
+  font-size: 20px;
+}
+
+nav #home {
+  font-size: 35px;
 }
 
 nav a:hover {
@@ -40,9 +53,14 @@ nav a:hover {
 }
 
 #nav-top {
+  height: 50px;
   display: flex;
   justify-content: space-between;
   background: #343a40;
+}
+
+#full-menu a {
+  line-height: 63px;
 }
 
 #nav-bottom {
@@ -90,13 +108,30 @@ nav a:hover {
 
 /* MAIN */
 main {
-  padding-bottom: 85px;
+  xpadding-bottom: 85px;
 }
 
 #welcome-section {
   height: 100vh;
   background-color: rgb(16,19,20);
+  xbackground: url("rays.jpg");
+  xbackground-size: cover;
+  xbackground-position: center;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "grenadier";
+}
+
+#welcome-section h1 {
+  font-size: 60px;
+}
+
+#welcome-section h2 {
+  xbackground-color: rgb(16,19,20);
+  padding: 20px;
 }
 
 .fab.fa-github {
@@ -104,16 +139,9 @@ main {
   color: white;
 }
 
-h1 {
-  margin: 0;
-  font-size: 60px;
-  text-align: center;
-  line-height: 100vh;
-}
-
-#projects {
-  background-color: #293133;
-  padding-top: 50px;
+#projects, #skills {
+  background-color: rgba(41, 49, 51, 0.9);
+  padding-top: 20px;
 }
 
 #projects-container {
@@ -122,7 +150,7 @@ h1 {
   justify-content: space-around;
   max-width: 1500px;
   margin: auto;
-  margin-bottom: 25px;
+  xmargin-bottom: 25px;
 }
 
 .project-tile {
@@ -149,6 +177,10 @@ h1 {
   text-align: center;
 }
 
+.project-description h3 {
+  font-size: 30px;
+}
+
 p {
   color: white;
 }
@@ -160,12 +192,16 @@ img {
   box-sizing: border-box;
 }
 
+#skills {
+  padding-bottom: 85px;
+}
+
 #skills h2, #projects h2 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 #skills-container {
@@ -183,6 +219,10 @@ img {
   color: white;
   font-size: 50px;
   margin: 20px;
+}
+
+#skills-container h3 {
+  font-size: 30px;
 }
 
 .skills-group {
@@ -209,4 +249,5 @@ footer a {
   display: inline-block;
   width: 100%;
   color: white;
+  font-size: 20px;
 }
