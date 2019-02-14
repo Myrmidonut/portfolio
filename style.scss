@@ -1,7 +1,12 @@
+$light-gray: #343a40;
+$opaque-gray: rgba(41, 49, 51, 0.9);
+$dark-gray: rgb(16,19,20);
+
 @font-face {
   font-family: "Grenadier";
   src: url("GrenadierNF.ttf");
 }
+
 html, body {
   padding: 0;
   margin: 0;
@@ -29,46 +34,49 @@ nav {
   top: 0;
   width: 100%;
   z-index: 10;
-}
-nav a {
-  display: inline-block;
-  height: 50px;
-  line-height: 54px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-nav a:hover {
-  background-color: #101314;
-}
-nav #home {
-  font-size: 35px;
+
+  a {
+    display: inline-block;
+    height: 50px;
+    line-height: 54px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  a:hover {
+    background-color: $dark-gray;
+  }
+
+  #home {
+    font-size: 35px;
+  }
 }
 
 #nav-top {
   height: 50px;
   display: flex;
   justify-content: space-between;
-  background: #343a40;
+  background: $light-gray;
 }
 
-@media screen and (max-width: 600px) {
-  #full-menu {
+#full-menu {
+  @media screen and (max-width: 600px) {
     display: none;
   }
-}
-#full-menu a {
-  line-height: 63px;
+
+  a {
+    line-height: 63px;
+  }
 }
 
 #nav-bottom {
-  background: #343a40;
+  background: $light-gray;
   width: 180px;
-}
-@media screen and (min-width: 600px) {
-  #nav-bottom {
+
+  @media screen and (min-width: 600px) {
     display: none;
   }
 }
@@ -80,15 +88,16 @@ nav #home {
 #burger {
   display: none;
   font-size: 25px;
-}
-@media screen and (max-width: 600px) {
-  #burger {
+
+  @media screen and (max-width: 600px) {
     display: inline-block;
   }
 }
 
-#burger-menu a {
-  display: block;
+#burger-menu {
+  a {
+    display: block;
+  }
 }
 
 .anchor-box {
@@ -103,24 +112,28 @@ nav #home {
 /* MAIN */
 #welcome-section {
   height: 100vh;
-  background-color: #101314;
+  background-color: $dark-gray;
+  
   xbackground: url("rays.jpg");
   xbackground-size: cover;
   xbackground-position: center;
+  
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   font-family: "grenadier";
-}
-#welcome-section h1 {
-  font-size: 80px;
-  letter-spacing: 10px;
-}
-#welcome-section h2 {
-  xbackground-color: #101314;
-  padding: 20px;
+
+  h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+  }
+  
+  h2 {
+    xbackground-color: $dark-gray;
+    padding: 20px;
+  }
 }
 
 .fab.fa-github {
@@ -129,7 +142,7 @@ nav #home {
 }
 
 #projects, #skills {
-  background-color: rgba(41, 49, 51, 0.9);
+  background-color: $opaque-gray;
   padding-top: 20px;
 }
 
@@ -140,33 +153,39 @@ nav #home {
   max-width: 1500px;
   margin: auto;
   xmargin-bottom: 25px;
-}
-#projects-container p a {
-  color: white;
+
+  p {
+    a {
+      color: white;
+    }
+  }
 }
 
 #fcc-introduction {
   margin: 20px;
   text-align: center;
-}
-#fcc-introduction a {
-  color: white;
+
+  a {
+    color: white;
+  }
 }
 
 .project-tile {
-  background-color: rgba(16, 19, 20, 0.5);
+  background-color: rgba(16,19,20,0.5);
   margin: 20px;
   width: 450px;
   border-radius: 1%;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
-}
-.project-tile a {
-  color: white;
-  text-decoration: none;
-}
-.project-tile a:hover {
-  color: white;
-  text-decoration: underline;
+  box-shadow: 0 0 35px rgba(0,0,0,0.3);
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 .project-description {
@@ -174,10 +193,11 @@ nav #home {
   padding: 25px;
   padding-bottom: 0;
   text-align: center;
-}
-.project-description h3 {
-  font-size: 30px;
-  margin-top: 0;
+
+  h3 {
+    font-size: 30px;
+    margin-top: 0;
+  }
 }
 
 p {
@@ -213,43 +233,45 @@ img {
   justify-content: center;
   color: white;
   text-align: center;
-}
-#skills-container i {
-  color: white;
-  font-size: 50px;
-  margin: 20px;
-}
-#skills-container h3 {
-  font-size: 30px;
+
+  i {
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+  }
+  
+  h3 {
+    font-size: 30px;
+  }
 }
 
 .skills-group {
-  background: rgba(16, 19, 20, 0.5);
+  background: rgba(16,19,20,0.5);
   margin: 20px;
   padding: 20px;
   border-radius: 1%;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 35px rgba(0,0,0,0.3);
 }
 
 /* FOOTER */
 footer {
   position: fixed;
   bottom: 0;
-  background: #343a40;
+  background: $light-gray;
   width: 100%;
   color: white;
   height: 50px;
   text-align: center;
   line-height: 50px;
-}
-footer a {
-  display: inline-block;
-  width: 100%;
-  color: white;
-  font-size: 20px;
-}
-footer a:hover {
-  background-color: #101314;
-}
 
-/*# sourceMappingURL=style.css.map */
+  a {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+  }
+
+  a:hover {
+    background-color: $dark-gray;
+  }
+}
