@@ -158,6 +158,10 @@ main {
   text-align: center;
 }
 
+#fcc-introduction a {
+  color: white;
+}
+
 #projects-container p a {
   color: white;
 }
