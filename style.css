@@ -17,8 +17,10 @@ html {
 }
 
 body {
-  xbackground-color: #293133;
-  background-image: url("pattern-grayscale.jpg");
+  /*
+  background-color: #293133;
+  */
+  background-image: url("images/pattern-grayscale.jpg");
 }
 
 /* NAVBAR */
@@ -39,6 +41,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-size: 20px;
+  transition: all 0.3s;
 }
 nav a:hover {
   background-color: #101314;
@@ -104,9 +107,11 @@ nav #home {
 #welcome-section {
   height: 100vh;
   background-color: #101314;
-  xbackground: url("rays.jpg");
-  xbackground-size: cover;
-  xbackground-position: center;
+  /*
+  background: url("rays.jpg");
+  background-size: cover;
+  background-position: center;
+  */
   color: white;
   display: flex;
   align-items: center;
@@ -117,10 +122,6 @@ nav #home {
 #welcome-section h1 {
   font-size: 80px;
   letter-spacing: 10px;
-}
-#welcome-section h2 {
-  xbackground-color: #101314;
-  padding: 20px;
 }
 
 .fab.fa-github {
@@ -139,7 +140,6 @@ nav #home {
   justify-content: space-around;
   max-width: 1500px;
   margin: auto;
-  xmargin-bottom: 25px;
 }
 #projects-container p a {
   color: white;
@@ -157,8 +157,13 @@ nav #home {
   background-color: rgba(16, 19, 20, 0.5);
   margin: 20px;
   width: 450px;
-  border-radius: 1%;
+  border-radius: 5px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+.project-tile:hover {
+  border: 1px solid white;
 }
 .project-tile a {
   color: white;
@@ -213,6 +218,7 @@ img {
   justify-content: center;
   color: white;
   text-align: center;
+  margin-bottom: 100px;
 }
 #skills-container i {
   color: white;
@@ -227,8 +233,23 @@ img {
   background: rgba(16, 19, 20, 0.5);
   margin: 20px;
   padding: 20px;
-  border-radius: 1%;
+  border-radius: 5px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+.skills-group p {
+  opacity: 0;
+  height: 0;
+  transition: all 0.3s;
+}
+.skills-group:hover {
+  border: 1px solid white;
+}
+.skills-group:hover p {
+  opacity: 1;
+  height: 100%;
+  transition: all 0.3s;
 }
 
 /* FOOTER */
