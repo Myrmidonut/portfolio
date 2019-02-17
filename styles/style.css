@@ -287,6 +287,10 @@ img {
   transition: all 0.3s;
 }
 
+hr {
+  border: 1px solid white;
+}
+
 /* FOOTER */
 footer {
   position: fixed;
