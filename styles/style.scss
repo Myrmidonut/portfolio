@@ -154,6 +154,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
   max-width: 1500px;
   margin: auto;
 
@@ -271,7 +272,7 @@ img {
 
 #skills-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: auto;
   max-width: 800px;
