@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Grenadier";
-  src: url("GrenadierNF.ttf");
+  src: url("../fonts/GrenadierNF.ttf");
 }
 html, body {
   padding: 0;
@@ -20,7 +20,7 @@ body {
   /*
   background-color: #293133;
   */
-  background-image: url("images/pattern-grayscale.jpg");
+  background-image: url("../images/pattern-grayscale.jpg");
 }
 
 /* NAVBAR */
@@ -123,6 +123,11 @@ nav #home {
   font-size: 80px;
   letter-spacing: 10px;
 }
+@media screen and (max-width: 400px) {
+  #welcome-section h1 {
+    font-size: 70px;
+  }
+}
 
 .fab.fa-github {
   font-size: 40px;
@@ -165,12 +170,36 @@ nav #home {
 .project-tile:hover {
   border: 1px solid white;
 }
+.project-tile:hover h3 {
+  text-decoration: underline;
+}
+.project-tile:hover .skills-text {
+  opacity: 1;
+  height: 100%;
+  transition: all 0.3s;
+}
+.project-tile i {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
+.project-tile .skills-text {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  transition: all 0.3s;
+}
 .project-tile a {
   color: white;
   text-decoration: none;
 }
 .project-tile a:hover {
-  color: white;
+  text-decoration: none;
+}
+.project-tile p a {
+  text-decoration: underline;
+}
+.project-tile p a:hover {
   text-decoration: underline;
 }
 
@@ -207,6 +236,11 @@ img {
   color: white;
   text-align: center;
   font-size: 60px;
+}
+@media screen and (max-width: 400px) {
+  #skills h2, #projects h2 {
+    font-size: 40px;
+  }
 }
 
 #skills-container {

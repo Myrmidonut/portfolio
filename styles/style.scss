@@ -4,7 +4,7 @@ $dark-gray: rgb(16,19,20);
 
 @font-face {
   font-family: "Grenadier";
-  src: url("GrenadierNF.ttf");
+  src: url("../fonts/GrenadierNF.ttf");
 }
 
 html, body {
@@ -25,7 +25,7 @@ body {
   /*
   background-color: #293133;
   */
-  background-image: url("images/pattern-grayscale.jpg");
+  background-image: url("../images/pattern-grayscale.jpg");
 }
 
 /* NAVBAR */
@@ -133,6 +133,10 @@ nav {
   h1 {
     font-size: 80px;
     letter-spacing: 10px;
+
+    @media screen and (max-width: 400px) {
+      font-size: 70px;
+    }
   }
 }
 
@@ -180,15 +184,47 @@ nav {
 
   &:hover {
     border: 1px solid white;
+
+    h3 {
+      text-decoration: underline;
+    }
+
+    .skills-text {
+      opacity: 1;
+      height: 100%;
+      transition: all 0.3s;
+    }
+  }
+
+  i {
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+  }
+
+  .skills-text {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    transition: all 0.3s;
   }
 
   a {
     color: white;
     text-decoration: none;
-  
+
     &:hover {
-      color: white;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    a {
       text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -227,6 +263,10 @@ img {
   color: white;
   text-align: center;
   font-size: 60px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 40px;
+  }
 }
 
 #skills-container {

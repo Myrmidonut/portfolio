@@ -7,14 +7,17 @@ My web developer portfolio showing a few of my personal projects and my submissi
 ***
 
 ## Main skills on display
-React
+
+React  
 Angular
 
-Express
+Express  
 Laravel
 
-MongoDB
+MongoDB  
 SQL
+
+D3
 
 ***
 
