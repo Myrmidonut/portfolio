@@ -2,11 +2,11 @@
 
 ## Introduction
 
-My web developer portfolio showing a few of my personal projects and my submissions for the freecodeCamp curriculum.
+My web developer portfolio showing my personal projects and my submissions for the freecodeCamp curriculum.
 
 ***
 
-## Main skills on display
+## Main Skills
 
 React  
 Angular
@@ -21,6 +21,6 @@ D3
 
 ***
 
-## Images
+## Preview Images
 
 Image goes here
