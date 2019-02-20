@@ -22,7 +22,10 @@ https://myrmidonut.github.io/portfolio
 
 * Backend
    * Node
+   * Express
+   * Mongodb/Mongoose
    * Laravel
+   * Passport
 
 * Databases
    * MongoDB
