@@ -6,21 +6,32 @@ My web developer portfolio showing my personal projects and my submissions for t
 
 ***
 
-## Main Skills
+## Skills
+* Frontend
+   * HTML5
+   * CSS3
+   * Sass
 
-React  
-Angular
+* Frontend Libraries and Frameworks
+   * React
+   * Angular
 
-Express  
-Laravel
+* Backend
+   * Node
+   * Laravel
 
-MongoDB  
-SQL
+* Databases
+   * MongoDB
+   * SQL
 
-D3
+* Testing
+   * Chai
+
+* Data Visualization
+   * D3
 
 ***
 
 ## Preview Images
-
-Image goes here
+...
+[](readme_images/)
