@@ -307,6 +307,7 @@ footer a {
   width: 100%;
   color: white;
   font-size: 20px;
+  transition: all 0.3s;
 }
 footer a:hover {
   background-color: #101314;
