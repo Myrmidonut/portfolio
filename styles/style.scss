@@ -190,10 +190,10 @@ nav {
       text-decoration: underline;
     }
 
-    .skills-text {
+    .skills-text, .project-links {
       opacity: 1;
       height: 100%;
-      transition: all 0.3s;
+      transition: all 1s;
     }
   }
 
@@ -203,7 +203,7 @@ nav {
     margin: 20px;
   }
 
-  .skills-text {
+  .skills-text, .project-links {
     opacity: 0;
     height: 0;
     margin: 0;
