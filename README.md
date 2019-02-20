@@ -2,7 +2,11 @@
 
 ## Introduction
 
-My web developer portfolio showing my personal projects and my submissions for the freecodeCamp curriculum.
+Hi! My name is Frederik and I'm a web developer!
+
+Check out my personal projects and my submissions for the freeCodeCamp curriculum on my portfolio!
+
+https://myrmidonut.github.io/portfolio
 
 ***
 
