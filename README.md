@@ -30,6 +30,12 @@ My web developer portfolio showing my personal projects and my submissions for t
 * Data Visualization
    * D3
 
+* Programming Languages
+   * JavaScript
+   * PHP
+   * Python
+   * Ruby
+
 ***
 
 ## Preview Images
