@@ -162,16 +162,33 @@ nav #home {
 .project-tile {
   background-color: rgba(16, 19, 20, 0.5);
   margin: 20px;
-  width: 450px;
+  width: 400px;
   border-radius: 5px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
+  color: white;
+  padding: 20px;
+  padding-bottom: 0;
+  text-align: center;
+}
+.project-tile h3 {
+  font-size: 30px;
+  margin-top: 15;
+}
+.project-tile a {
+  color: white;
+  text-decoration: none;
+}
+.project-tile img {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 .project-tile:hover {
   border: 1px solid white;
 }
-.project-tile:hover h3 {
+.project-tile:hover h3, .project-tile:hover a {
   text-decoration: underline;
 }
 .project-tile:hover .skills-text, .project-tile:hover .project-links {
@@ -190,19 +207,6 @@ nav #home {
   margin: 0;
   transition: all 0.3s;
 }
-.project-tile a {
-  color: white;
-  text-decoration: none;
-}
-.project-tile a:hover {
-  text-decoration: none;
-}
-.project-tile p a {
-  text-decoration: underline;
-}
-.project-tile p a:hover {
-  text-decoration: underline;
-}
 
 .project-description {
   color: white;
@@ -218,13 +222,6 @@ nav #home {
 p {
   color: white;
   font-size: 20px;
-}
-
-img {
-  padding: 20px;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 #skills {
@@ -249,7 +246,7 @@ img {
   align-items: flex-start;
   flex-wrap: wrap;
   margin: auto;
-  max-width: 800px;
+  max-width: 900px;
   justify-content: center;
   color: white;
   text-align: center;
