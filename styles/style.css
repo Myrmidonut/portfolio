@@ -106,12 +106,9 @@ nav #home {
 /* MAIN */
 #welcome-section {
   height: 100vh;
-  background-color: #101314;
-  /*
-  background: url("rays.jpg");
+  xbackground-color: #101314;
+  background: url("../images/main.png");
   background-size: cover;
-  background-position: center;
-  */
   color: white;
   display: flex;
   align-items: center;
@@ -120,6 +117,7 @@ nav #home {
   font-family: "grenadier";
 }
 #welcome-section h1 {
+  display: none;
   font-size: 80px;
   letter-spacing: 10px;
 }
