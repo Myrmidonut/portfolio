@@ -27,23 +27,23 @@ https://myrmidonut.github.io/portfolio
    * Mongoose
    * Passport
 
-* Databases
-   * MongoDB
-   * SQL
-
 * Quality Assurance and Testing
    * git
    * Helmet
    * Chai
-
-* Data Visualization
-   * D3
 
 * Programming Languages
    * JavaScript
    * PHP
    * Python
    * Ruby
+
+* Databases
+   * MongoDB
+   * SQL
+
+* Data Visualization
+   * D3
 
 ***
 
