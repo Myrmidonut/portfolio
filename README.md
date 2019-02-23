@@ -31,7 +31,7 @@ https://myrmidonut.github.io/portfolio
    * MongoDB
    * SQL
 
-* Testing
+* Quality Assurance and Testing
    * Chai
 
 * Data Visualization
@@ -46,5 +46,14 @@ https://myrmidonut.github.io/portfolio
 ***
 
 ## Preview Images
-...
-[](readme_images/)
+### Main
+![Main](readme_images/main.png)
+
+### Mobile
+![Mobile](readme_images/mobile.png)
+
+### Projects
+![Projects](readme_images/projects.png)
+
+## Skills
+![Skills](readme_images/skills.png)

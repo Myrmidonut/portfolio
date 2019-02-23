@@ -21,8 +21,13 @@ const fontLoad = new FontFace("Grenadier", "url(fonts/GrenadierNF.ttf)")
 fontLoad.load().then(() => {
   const canvas = document.querySelector("canvas")
 
-  canvas.width = document.querySelector("body").scrollWidth
-  canvas.height = window.innerHeight
+  //canvas.width = document.querySelector("body").scrollWidth
+  //canvas.height = window.innerHeight
+  //console.log(canvas.width, canvas.height)
+
+  canvas.width = document.documentElement.clientWidth;
+  canvas.height = document.documentElement.clientHeight;
+  //console.log(canvas.width, canvas.height)
 
   const centerX = canvas.width / 2
   const centerY = canvas.height / 2 - 50;
