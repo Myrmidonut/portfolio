@@ -109,4 +109,4 @@ setTimeout(() => {
   horizontalBars.strokeStyle = "#ce8f00"
 
   horizontalBars.stroke()
-}, 1)
+}, 100)
