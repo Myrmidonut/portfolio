@@ -14,12 +14,10 @@ html {
 * {
   font-family: "Grenadier";
   letter-spacing: 5px;
+  font-weight: 100;
 }
 
 body {
-  /*
-  background-color: #293133;
-  */
   background-image: url("../images/pattern-grayscale.jpg");
 }
 
@@ -106,25 +104,12 @@ nav #home {
 /* MAIN */
 #welcome-section {
   height: 100vh;
-  xbackground-color: #101314;
-  background: url("../images/main.png");
-  background-size: cover;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "grenadier";
+  padding-top: 50px;
 }
-#welcome-section h1 {
-  display: none;
-  font-size: 80px;
-  letter-spacing: 10px;
-}
-@media screen and (max-width: 400px) {
-  #welcome-section h1 {
-    font-size: 70px;
-  }
+#welcome-section canvas {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, #6b4619, #1b1b1b 66%, #1b1b1b 90%, rgba(41, 49, 51, 0.9));
 }
 
 .fab.fa-github {
@@ -135,6 +120,7 @@ nav #home {
 #projects, #skills {
   background-color: rgba(41, 49, 51, 0.9);
   padding-top: 20px;
+  z-index: -1;
 }
 
 #projects-container {
