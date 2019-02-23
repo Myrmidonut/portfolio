@@ -163,26 +163,34 @@ nav #home {
   color: white;
   text-decoration: none;
 }
-.project-tile img {
+.project-tile a img {
   display: block;
   width: 100%;
   box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
 }
-.project-tile:hover {
-  border: 1px solid white;
-}
-.project-tile:hover h3, .project-tile:hover a {
-  text-decoration: underline;
-}
-.project-tile:hover .skills-text, .project-tile:hover .project-links {
-  opacity: 1;
-  height: 100%;
-  transition: all 1s;
+@media screen and (min-width: 601px) {
+  .project-tile:hover {
+    border: 1px solid white;
+  }
+  .project-tile:hover h3, .project-tile:hover p a {
+    text-decoration: underline;
+  }
+  .project-tile:hover .skills-text, .project-tile:hover .project-links {
+    opacity: 1;
+    height: 100%;
+    transition: all 1s;
+  }
 }
 .project-tile i {
   color: white;
   font-size: 50px;
   margin: 20px;
+}
+.project-tile img {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .project-tile .skills-text, .project-tile .project-links {
   opacity: 0;
@@ -194,9 +202,21 @@ nav #home {
   .project-tile {
     padding: 10px;
     margin: 10px;
+    border: 1px solid white;
   }
   .project-tile i {
     margin: 10px;
+  }
+  .project-tile img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .project-tile h3, .project-tile p a {
+    text-decoration: underline;
+  }
+  .project-tile .skills-text, .project-tile .project-links {
+    opacity: 1;
+    height: 100%;
   }
 }
 
@@ -244,14 +264,6 @@ p {
   text-align: center;
   margin-bottom: 100px;
 }
-#skills-container i {
-  color: white;
-  font-size: 50px;
-  margin: 20px;
-}
-#skills-container h3 {
-  font-size: 30px;
-}
 
 .skills-group {
   background: rgba(16, 19, 20, 0.5);
@@ -262,18 +274,51 @@ p {
   border: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
 }
+.skills-group i {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
+.skills-group h3 {
+  font-size: 30px;
+}
 .skills-group p {
   opacity: 0;
   height: 0;
   transition: all 0.3s;
 }
-.skills-group:hover {
-  border: 1px solid white;
+@media screen and (min-width: 601px) {
+  .skills-group:hover {
+    border: 1px solid white;
+  }
+  .skills-group:hover p {
+    opacity: 1;
+    height: 100%;
+    transition: all 0.3s;
+  }
 }
-.skills-group:hover p {
-  opacity: 1;
-  height: 100%;
-  transition: all 0.3s;
+.skills-group img {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 600px) {
+  .skills-group {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid white;
+  }
+  .skills-group p {
+    opacity: 1;
+    height: 100%;
+    transition: all 0.3s;
+  }
+  .skills-group i {
+    margin: 10px;
+  }
+  .skills-group img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 hr {

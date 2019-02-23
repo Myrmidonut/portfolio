@@ -1,5 +1,4 @@
 // NAVBAR
-
 const burger = document.querySelector("#burger")
 const navBottom = document.querySelector("#nav-bottom")
 const burgerMenuLink = document.querySelectorAll(".burger-menu-link");
@@ -21,20 +20,15 @@ const fontLoad = new FontFace("Grenadier", "url(fonts/GrenadierNF.ttf)")
 fontLoad.load().then(() => {
   const canvas = document.querySelector("canvas")
 
-  //canvas.width = document.querySelector("body").scrollWidth
-  //canvas.height = window.innerHeight
-  //console.log(canvas.width, canvas.height)
-
   canvas.width = document.documentElement.clientWidth;
   canvas.height = document.documentElement.clientHeight;
-  //console.log(canvas.width, canvas.height)
 
   const centerX = canvas.width / 2
-  const centerY = canvas.height / 2 - 50;
   const heightThird = canvas.height / 100 * 70
   const heightHalf = canvas.height / 2 - 50
   const radius = Math.sqrt(Math.pow(canvas.height, 2) + Math.pow(canvas.width, 2))
 
+  // RAYS
   const rays = canvas.getContext("2d")
 
   rays.beginPath();
@@ -58,6 +52,7 @@ fontLoad.load().then(() => {
 
   rays.stroke()
 
+  // TITLE
   const title = canvas.getContext("2d")
   const titleText = "frederik"
 
@@ -75,6 +70,7 @@ fontLoad.load().then(() => {
 
   title.fillText("frederik", centerX, heightHalf)
 
+  // SUBTITLE
   const subtitle = canvas.getContext("2d")
   const subtitleText = "developer"
 
@@ -96,7 +92,7 @@ fontLoad.load().then(() => {
 
   horizontalBars.beginPath();
 
-  // frederik
+  // BARS TITLE
   horizontalBars.moveTo(centerX, heightHalf - titleWidth / 7)
   horizontalBars.lineTo(centerX + titleWidth / 2 + 15, heightHalf - titleWidth / 7)
   horizontalBars.moveTo(centerX, heightHalf - titleWidth / 7)
@@ -107,7 +103,7 @@ fontLoad.load().then(() => {
   horizontalBars.moveTo(centerX, heightHalf + titleWidth / 7)
   horizontalBars.lineTo(centerX - titleWidth / 2 - 15, heightHalf + titleWidth / 7)
 
-  // developer
+  // BARS SUBTITLE
   horizontalBars.moveTo(centerX + subtitleWidth / 2 + 10, heightThird)
   horizontalBars.lineTo(canvas.width - 10, heightThird)
   horizontalBars.moveTo(centerX + subtitleWidth / 2 + 10, heightThird - subtitleWidth / 15)

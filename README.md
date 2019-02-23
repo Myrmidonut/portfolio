@@ -21,10 +21,10 @@ https://myrmidonut.github.io/portfolio
    * Angular
 
 * Backend
+   * Laravel
    * Node
    * Express
-   * Mongodb/Mongoose
-   * Laravel
+   * Mongoose
    * Passport
 
 * Databases
@@ -32,6 +32,8 @@ https://myrmidonut.github.io/portfolio
    * SQL
 
 * Quality Assurance and Testing
+   * git
+   * Helmet
    * Chai
 
 * Data Visualization
