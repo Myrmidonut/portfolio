@@ -50,7 +50,9 @@ rays.strokeStyle = gradient
 
 rays.stroke()
 
-setTimeout(() => {
+const fontLoad = new FontFace("Grenadier", "url(fonts/GrenadierNF.ttf)")
+
+fontLoad.load().then(() => {
   const title = canvas.getContext("2d")
   const titleText = "FREDERIK"
 
@@ -109,4 +111,4 @@ setTimeout(() => {
   horizontalBars.strokeStyle = "#ce8f00"
 
   horizontalBars.stroke()
-}, 100)
+})
