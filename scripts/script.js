@@ -56,7 +56,7 @@ fontLoad.load().then(() => {
   const title = canvas.getContext("2d")
   const titleText = "FREDERIK"
 
-  title.font = `${canvas.height / 7.5}px Grenadier`
+  title.font = `100 ${canvas.height / 7.5}px Grenadier`
   title.textBaseline = "middle"
   title.fillStyle = "white"
   title.textAlign = "center"
@@ -68,7 +68,7 @@ fontLoad.load().then(() => {
   const subtitle = canvas.getContext("2d")
   const subtitleText = "developer"
 
-  subtitle.font = `${canvas.height / 10.3}px Grenadier`
+  subtitle.font = `100 ${canvas.height / 10.3}px Grenadier`
   subtitle.textBaseline = "middle"
   subtitle.fillStyle = "white"
   subtitle.textAlign = "center"
