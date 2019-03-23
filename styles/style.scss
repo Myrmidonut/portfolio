@@ -26,7 +26,8 @@ body {
   background-image: url("../images/pattern-grayscale.jpg");
 }
 
-/* NAVBAR */
+/* NAVBAR ----------------------------- */
+
 nav {
   display: flex;
   flex-direction: column;
@@ -110,7 +111,8 @@ nav {
   top: -50px;
 }
 
-/* MAIN */
+/* MAIN ------------------------------- */
+
 #welcome-section {
   height: 100vh;
   padding-top: 50px;
@@ -166,7 +168,6 @@ nav {
   background-color: rgba(16,19,20,0.5);
   margin: 20px;
   width: 400px;
-  border-radius: 5px;
   box-shadow: 0 0 35px rgba(0,0,0,0.3);
   border: 1px solid rgba(0,0,0,0);
   transition: all 0.3s;
@@ -174,6 +175,31 @@ nav {
   padding: 20px;
   padding-bottom: 0;
   text-align: center;
+  position: relative;
+
+  &:before {
+    border: 1px solid rgba(0,0,0,0);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -7px;
+    right: -7px;
+    bottom: 5px;
+    transition: all 0.3s;
+  }
+
+  &:after {
+    border: 1px solid rgba(0,0,0,0);
+    content: "";
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 5px;
+    right: 5px;
+    bottom: -7px;
+    transition: all 0.3s;
+  }
 
   h3 {
     font-size: 30px;
@@ -196,6 +222,14 @@ nav {
   @media screen and (min-width: 601px) {
     &:hover {
       border: 1px solid white;
+
+      &:before {
+        border: 1px solid white;
+      }
+
+      &:after {
+        border: 1px solid white;
+      }
   
       h3, p a {
         text-decoration: underline;
@@ -229,7 +263,16 @@ nav {
 
   @media screen and (max-width: 600px) {
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
+    border: 1px solid white;
+
+    &:before {
+      border: 1px solid white;
+    }
+
+    &:after {
+      border: 1px solid white;
+    }
 
     i {
       margin: 10px;
@@ -239,8 +282,6 @@ nav {
       margin-left: 10px;
       margin-right: 10px;
     }
-
-    border: 1px solid white;
 
     h3, p a {
       text-decoration: underline;
@@ -282,7 +323,7 @@ p {
   font-size: 60px;
 
   @media screen and (max-width: 400px) {
-    font-size: 40px;
+    //font-size: 40px;
   }
 }
 
@@ -302,10 +343,34 @@ p {
   background: rgba(16,19,20,0.5);
   margin: 20px;
   padding: 20px;
-  border-radius: 5px;
   box-shadow: 0 0 35px rgba(0,0,0,0.3);
   border: 1px solid rgba(0,0,0,0);
   transition: all 0.3s;
+  position: relative;
+
+  &:before {
+    border: 1px solid rgba(0,0,0,0);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -7px;
+    right: -7px;
+    bottom: 5px;
+    transition: all 0.3s;
+  }
+
+  &:after {
+    border: 1px solid rgba(0,0,0,0);
+    content: "";
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 5px;
+    right: 5px;
+    bottom: -7px;
+    transition: all 0.3s;
+  }
 
   i {
     color: white;
@@ -327,6 +392,14 @@ p {
     &:hover {
       border: 1px solid white;
 
+      &:before {
+        border: 1px solid white;
+      }
+
+      &:after {
+        border: 1px solid white;
+      }
+
       p {
         opacity: 1;
         height: 100%;
@@ -342,9 +415,16 @@ p {
   
   @media screen and (max-width: 600px) {
     padding: 10px;
-    margin: 10px;
-
+    margin: 20px;
     border: 1px solid white;
+
+    &:before {
+      border: 1px solid white;
+    }
+
+    &:after {
+      border: 1px solid white;
+    }
 
     p {
       opacity: 1;

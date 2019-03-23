@@ -21,7 +21,7 @@ body {
   background-image: url("../images/pattern-grayscale.jpg");
 }
 
-/* NAVBAR */
+/* NAVBAR ----------------------------- */
 nav {
   display: flex;
   flex-direction: column;
@@ -101,7 +101,7 @@ nav #home {
   top: -50px;
 }
 
-/* MAIN */
+/* MAIN ------------------------------- */
 #welcome-section {
   height: 100vh;
   padding-top: 50px;
@@ -146,7 +146,6 @@ nav #home {
   background-color: rgba(16, 19, 20, 0.5);
   margin: 20px;
   width: 400px;
-  border-radius: 5px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s;
@@ -154,6 +153,29 @@ nav #home {
   padding: 20px;
   padding-bottom: 0;
   text-align: center;
+  position: relative;
+}
+.project-tile:before {
+  border: 1px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -7px;
+  right: -7px;
+  bottom: 5px;
+  transition: all 0.3s;
+}
+.project-tile:after {
+  border: 1px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 5px;
+  right: 5px;
+  bottom: -7px;
+  transition: all 0.3s;
 }
 .project-tile h3 {
   font-size: 30px;
@@ -172,6 +194,12 @@ nav #home {
 }
 @media screen and (min-width: 601px) {
   .project-tile:hover {
+    border: 1px solid white;
+  }
+  .project-tile:hover:before {
+    border: 1px solid white;
+  }
+  .project-tile:hover:after {
     border: 1px solid white;
   }
   .project-tile:hover h3, .project-tile:hover p a {
@@ -201,7 +229,13 @@ nav #home {
 @media screen and (max-width: 600px) {
   .project-tile {
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
+    border: 1px solid white;
+  }
+  .project-tile:before {
+    border: 1px solid white;
+  }
+  .project-tile:after {
     border: 1px solid white;
   }
   .project-tile i {
@@ -247,12 +281,6 @@ p {
   text-align: center;
   font-size: 60px;
 }
-@media screen and (max-width: 400px) {
-  #skills h2, #projects h2 {
-    font-size: 40px;
-  }
-}
-
 #skills-container {
   display: flex;
   align-items: flex-start;
@@ -269,9 +297,31 @@ p {
   background: rgba(16, 19, 20, 0.5);
   margin: 20px;
   padding: 20px;
-  border-radius: 5px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+  position: relative;
+}
+.skills-group:before {
+  border: 1px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -7px;
+  right: -7px;
+  bottom: 5px;
+  transition: all 0.3s;
+}
+.skills-group:after {
+  border: 1px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 5px;
+  right: 5px;
+  bottom: -7px;
   transition: all 0.3s;
 }
 .skills-group i {
@@ -291,6 +341,12 @@ p {
   .skills-group:hover {
     border: 1px solid white;
   }
+  .skills-group:hover:before {
+    border: 1px solid white;
+  }
+  .skills-group:hover:after {
+    border: 1px solid white;
+  }
   .skills-group:hover p {
     opacity: 1;
     height: 100%;
@@ -304,7 +360,13 @@ p {
 @media screen and (max-width: 600px) {
   .skills-group {
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
+    border: 1px solid white;
+  }
+  .skills-group:before {
+    border: 1px solid white;
+  }
+  .skills-group:after {
     border: 1px solid white;
   }
   .skills-group p {
