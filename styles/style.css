@@ -154,6 +154,7 @@ nav #home {
   padding-bottom: 0;
   text-align: center;
   position: relative;
+  z-index: 1;
 }
 .project-tile:before {
   border: 1px solid rgba(0, 0, 0, 0);
@@ -165,6 +166,7 @@ nav #home {
   right: -7px;
   bottom: 5px;
   transition: all 0.3s;
+  z-index: -1;
 }
 .project-tile:after {
   border: 1px solid rgba(0, 0, 0, 0);
@@ -176,6 +178,7 @@ nav #home {
   right: 5px;
   bottom: -7px;
   transition: all 0.3s;
+  z-index: -1;
 }
 .project-tile h3 {
   font-size: 30px;
@@ -184,6 +187,7 @@ nav #home {
 .project-tile a {
   color: white;
   text-decoration: none;
+  z-index: 1000;
 }
 .project-tile a img {
   display: block;
@@ -397,6 +401,7 @@ footer {
   height: 50px;
   text-align: center;
   line-height: 50px;
+  z-index: 10;
 }
 footer a {
   display: inline-block;

@@ -176,6 +176,7 @@ nav {
   padding-bottom: 0;
   text-align: center;
   position: relative;
+  z-index: 1;
 
   &:before {
     border: 1px solid rgba(0,0,0,0);
@@ -187,6 +188,7 @@ nav {
     right: -7px;
     bottom: 5px;
     transition: all 0.3s;
+    z-index: -1;
   }
 
   &:after {
@@ -199,6 +201,7 @@ nav {
     right: 5px;
     bottom: -7px;
     transition: all 0.3s;
+    z-index: -1;
   }
 
   h3 {
@@ -209,6 +212,7 @@ nav {
   a {
     color: white;
     text-decoration: none;
+    z-index: 1000;
 
     img {
       display: block;
@@ -457,6 +461,7 @@ footer {
   height: 50px;
   text-align: center;
   line-height: 50px;
+  z-index: 10;
 
   a {
     display: inline-block;
