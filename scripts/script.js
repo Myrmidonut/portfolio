@@ -34,9 +34,13 @@ function drawCanvas() {
   canvas.height = document.documentElement.clientHeight;
 
   const centerX = canvas.width / 2
-  const heightThird = canvas.height / 100 * 70
+  let heightThird = canvas.height / 100 * 70
   const heightHalf = canvas.height / 2 - 50
   const radius = Math.sqrt(Math.pow(canvas.height, 2) + Math.pow(canvas.width, 2))
+
+  if (canvas.height <= 400) {
+    heightThird -= 30
+  }
 
   // RAYS
   const rays = canvas.getContext("2d")
@@ -66,7 +70,7 @@ function drawCanvas() {
   const title = canvas.getContext("2d")
   const titleText = "frederik"
 
-  if (canvas.width <= 450) { // 700
+  if (canvas.width <= 450) {
     title.font = `100 ${canvas.width / 6}px Grenadier`
   } else {
     title.font = `100 ${canvas.height / 6.5}px Grenadier`
@@ -84,7 +88,7 @@ function drawCanvas() {
   const subtitle = canvas.getContext("2d")
   const subtitleText = "developer"
 
-  if (canvas.width <= 450) { // 700
+  if (canvas.width <= 450) {
     subtitle.font = `100 ${canvas.width / 10.3}px Grenadier`
   } else {
     subtitle.font = `100 ${canvas.height / 15}px Grenadier`
