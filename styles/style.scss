@@ -223,6 +223,34 @@ nav {
     }
   }
 
+  i {
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+  }
+
+  img {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .skills-text, .project-links {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    transition: all 0.3s;
+    display: none;
+
+    p {
+      height: 0;
+      margin: 0;
+    }
+
+    a {
+      height: 0;
+    }
+  }
+
   @media screen and (min-width: 601px) {
     &:hover {
       border: 1px solid white;
@@ -242,27 +270,19 @@ nav {
       .skills-text, .project-links {
         opacity: 1;
         height: 100%;
-        transition: all 1s;
+        display: block;
+        transition: height 1s;
+
+        p {
+          height: initial;
+          margin: 20px;
+        }
+
+        a {
+          height: initial;
+        }
       }
     }
-  }
-  
-  i {
-    color: white;
-    font-size: 50px;
-    margin: 20px;
-  }
-
-  img {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .skills-text, .project-links {
-    opacity: 0;
-    height: 0;
-    margin: 0;
-    transition: all 0.3s;
   }
 
   @media screen and (max-width: 600px) {
@@ -294,6 +314,15 @@ nav {
     .skills-text, .project-links {
       opacity: 1;
       height: 100%;
+
+      p {
+        height: initial;
+        margin: 20px;
+      }
+
+      a {
+        height: initial;
+      }
     }
   }
 }
@@ -351,6 +380,7 @@ p {
   border: 1px solid rgba(0,0,0,0);
   transition: all 0.3s;
   position: relative;
+  z-index: 1;
 
   &:before {
     border: 1px solid rgba(0,0,0,0);
@@ -362,6 +392,7 @@ p {
     right: -7px;
     bottom: 5px;
     transition: all 0.3s;
+    z-index: -1;
   }
 
   &:after {
@@ -374,6 +405,7 @@ p {
     right: 5px;
     bottom: -7px;
     transition: all 0.3s;
+    z-index: -1;
   }
 
   i {
