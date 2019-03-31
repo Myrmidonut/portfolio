@@ -287,7 +287,7 @@ nav {
   }
 
   @media screen and (max-width: 600px) {
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     border: 1px solid white;
 
@@ -453,7 +453,7 @@ p {
   }
   
   @media screen and (max-width: 600px) {
-    padding: 10px;
+    padding: 20px;
     margin: 20px;
     border: 1px solid white;
 
@@ -469,6 +469,7 @@ p {
       opacity: 1;
       height: 100%;
       transition: all 0.3s;
+      display: block;
     }
 
     i {
