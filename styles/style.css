@@ -68,12 +68,6 @@ nav #home {
   background: #343a40;
   width: 180px;
 }
-@media screen and (min-width: 600px) {
-  #nav-bottom {
-    display: none;
-  }
-}
-
 .nav-bottom-hide {
   display: none;
 }
@@ -81,6 +75,7 @@ nav #home {
 #burger {
   display: none;
   font-size: 25px;
+  padding-left: 14px;
 }
 @media screen and (max-width: 600px) {
   #burger {

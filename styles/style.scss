@@ -79,7 +79,7 @@ nav {
   width: 180px;
 
   @media screen and (min-width: 600px) {
-    display: none;
+    //display: none;
   }
 }
 
@@ -90,6 +90,7 @@ nav {
 #burger {
   display: none;
   font-size: 25px;
+  padding-left: 14px;
 
   @media screen and (max-width: 600px) {
     display: inline-block;
