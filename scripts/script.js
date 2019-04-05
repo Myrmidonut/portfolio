@@ -1,7 +1,3 @@
-window.addEventListener("resize", () => {
-	drawCanvas()
-}, false);
-
 // NAVBAR
 const burger = document.querySelector("#burger")
 const navBottom = document.querySelector("#nav-bottom")
@@ -18,18 +14,13 @@ burgerMenuLink.forEach(e => {
   })
 })
 
-// FONT
-/*const fontLoad = new FontFace("Grenadier", "url(fonts/GrenadierNF.ttf)")
-
-fontLoad.load()
-.then(() => {
-  console.log("font loaded")
-  drawCanvas()
-})*/
+// CANVAS
+window.addEventListener("resize", () => {
+	drawCanvas()
+}, false);
 
 window.onload = drawCanvas
 
-// CANVAS
 function drawCanvas() {
   const canvas = document.querySelector("canvas")
 
@@ -71,89 +62,74 @@ function drawCanvas() {
 
   // TITLE
   const title = canvas.getContext("2d")
-  const titleText = "frederik"
-
+  const titleText = "FREDERIK"
   let titleHeight
 
   if (canvas.width <= 450) {
-    titleHeight = canvas.width / 6
+    titleHeight = canvas.width / 7
   } else {
-    titleHeight = canvas.height / 6.5
+    titleHeight = canvas.height / 10
   }
 
-  /*if (canvas.width <= 450) {
-    title.font = `100 ${canvas.width / 6}px Grenadier`
-  } else {
-    title.font = `100 ${canvas.height / 6.5}px Grenadier`
-  }*/
-
-  title.font = `100 ${titleHeight}px Grenadier`
-
-  title.textBaseline = "middle"
+  title.font = `100 ${titleHeight}pt Grenadier`
+  title.textBaseline = "alphabetic"
   title.fillStyle = "white"
   title.textAlign = "center"
 
   const titleWidth = title.measureText(titleText).width
 
-  title.fillText("frederik", centerX, heightHalf)
+  title.fillText(titleText, centerX, heightHalf + titleHeight / 2)
 
   // SUBTITLE
   const subtitle = canvas.getContext("2d")
-  const subtitleText = "developer"
-
+  const subtitleText = "DEVELOPER"
   let subtitleHeight
 
   if (canvas.width <= 450) {
-    subtitleHeight = canvas.width / 10.3
+    subtitleHeight = canvas.width / 13
   } else {
-    subtitleHeight = canvas.height / 15
+    subtitleHeight = canvas.height / 20
   }
 
-  /*if (canvas.width <= 450) {
-    subtitle.font = `100 ${canvas.width / 10.3}px Grenadier`
-  } else {
-    subtitle.font = `100 ${canvas.height / 15}px Grenadier`
-  }*/
-
-  subtitle.font = `100 ${subtitleHeight}px Grenadier`
-
-  subtitle.textBaseline = "middle"
+  subtitle.font = `100 ${subtitleHeight}pt Grenadier`
+  subtitle.textBaseline = "alphabetic"
   subtitle.fillStyle = "white"
   subtitle.textAlign = "center"
 
   const subtitleWidth = title.measureText(subtitleText).width
 
-  subtitle.fillText("developer", centerX, heightThird)
+  subtitle.fillText(subtitleText, centerX, heightThird + subtitleHeight / 2)
 
+  // BARS
   const horizontalBars = canvas.getContext("2d")
 
   horizontalBars.beginPath();
 
   // BARS TITLE
-  horizontalBars.moveTo(centerX, heightHalf - titleHeight / 2) //titleWidth / 7)
-  horizontalBars.lineTo(centerX + titleWidth / 2 + 15, heightHalf - titleHeight / 2)
-  horizontalBars.moveTo(centerX, heightHalf - titleHeight / 2)
-  horizontalBars.lineTo(centerX - titleWidth / 2 - 15, heightHalf - titleHeight / 2)
+  horizontalBars.moveTo(centerX, heightHalf - titleHeight / 2 - 10)
+  horizontalBars.lineTo(centerX + titleWidth / 2 + 15, heightHalf - titleHeight / 2 - 10)
+  horizontalBars.moveTo(centerX, heightHalf - titleHeight / 2 - 10)
+  horizontalBars.lineTo(centerX - titleWidth / 2 - 15, heightHalf - titleHeight / 2 - 10)
 
-  horizontalBars.moveTo(centerX, heightHalf + titleHeight / 2)
-  horizontalBars.lineTo(centerX + titleWidth / 2 + 15, heightHalf + titleHeight / 2)
-  horizontalBars.moveTo(centerX, heightHalf + titleHeight / 2)
-  horizontalBars.lineTo(centerX - titleWidth / 2 - 15, heightHalf + titleHeight / 2)
+  horizontalBars.moveTo(centerX, heightHalf + titleHeight / 2 + 10)
+  horizontalBars.lineTo(centerX + titleWidth / 2 + 15, heightHalf + titleHeight / 2 + 10)
+  horizontalBars.moveTo(centerX, heightHalf + titleHeight / 2 + 10)
+  horizontalBars.lineTo(centerX - titleWidth / 2 - 15, heightHalf + titleHeight / 2 + 10)
 
   // BARS SUBTITLE
   horizontalBars.moveTo(centerX + subtitleWidth / 2 + 10, heightThird)
   horizontalBars.lineTo(canvas.width - 10, heightThird)
-  horizontalBars.moveTo(centerX + subtitleWidth / 2 + 10, heightThird - subtitleHeight / 3.5)
-  horizontalBars.lineTo(canvas.width - 10, heightThird - subtitleHeight / 3.5)
-  horizontalBars.moveTo(centerX + subtitleWidth / 2 + 10, heightThird + subtitleHeight / 3.5) //subtitleWidth / 15)
-  horizontalBars.lineTo(canvas.width - 10, heightThird + subtitleHeight / 3.5)
+  horizontalBars.moveTo(centerX + subtitleWidth / 2 + 10, heightThird - subtitleHeight / 2 + 2)
+  horizontalBars.lineTo(canvas.width - 10, heightThird - subtitleHeight / 2 + 2)
+  horizontalBars.moveTo(centerX + subtitleWidth / 2 + 10, heightThird + subtitleHeight / 2 - 2)
+  horizontalBars.lineTo(canvas.width - 10, heightThird + subtitleHeight / 2 - 2)
 
   horizontalBars.moveTo(centerX - subtitleWidth / 2 - 10, heightThird)
   horizontalBars.lineTo(10, heightThird)
-  horizontalBars.moveTo(centerX - subtitleWidth / 2 - 10, heightThird - subtitleHeight / 3.5)
-  horizontalBars.lineTo(10, heightThird - subtitleHeight / 3.5)
-  horizontalBars.moveTo(centerX - subtitleWidth / 2 - 10, heightThird + subtitleHeight / 3.5)
-  horizontalBars.lineTo(10, heightThird + subtitleHeight / 3.5)
+  horizontalBars.moveTo(centerX - subtitleWidth / 2 - 10, heightThird - subtitleHeight / 2 + 2)
+  horizontalBars.lineTo(10, heightThird - subtitleHeight / 2 + 2)
+  horizontalBars.moveTo(centerX - subtitleWidth / 2 - 10, heightThird + subtitleHeight / 2 - 2)
+  horizontalBars.lineTo(10, heightThird + subtitleHeight / 2 - 2)
 
   horizontalBars.lineWidth = 5
   horizontalBars.strokeStyle = "#ce8f00"
