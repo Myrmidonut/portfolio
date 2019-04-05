@@ -19,12 +19,15 @@ burgerMenuLink.forEach(e => {
 })
 
 // FONT
-const fontLoad = new FontFace("Grenadier", "url(fonts/GrenadierNF.ttf)")
+/*const fontLoad = new FontFace("Grenadier", "url(fonts/GrenadierNF.ttf)")
 
 fontLoad.load()
 .then(() => {
+  console.log("font loaded")
   drawCanvas()
-})
+})*/
+
+window.onload = drawCanvas
 
 // CANVAS
 function drawCanvas() {
