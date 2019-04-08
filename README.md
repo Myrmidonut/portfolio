@@ -19,24 +19,29 @@ https://www.frederikfunke.com
 * Frontend Libraries and Frameworks
    * React
    * Angular
+   * Vue
 
 * Backend
-   * PHP
    * Laravel
-   * Node
+   * Django
    * Express
    * Mongoose
    * Passport
 
+* API
+   * REST
+   * GraphQL
+
 * Quality Assurance and Testing
    * git
+   * Webpack
    * Helmet
    * Chai
 
 * Programming Languages
    * JavaScript
-   * PHP
    * Python
+   * PHP
    * Ruby
 
 * Databases
