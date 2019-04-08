@@ -6,7 +6,7 @@ Hi! My name is Frederik and I'm a web developer!
 
 Check out my personal projects and my submissions for the freeCodeCamp curriculum on my portfolio!
 
-https://myrmidonut.github.io
+https://www.frederikfunke.com
 
 ***
 

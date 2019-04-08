@@ -77,10 +77,6 @@ nav {
 #nav-bottom {
   background: $light-gray;
   width: 180px;
-
-  @media screen and (min-width: 600px) {
-    //display: none;
-  }
 }
 
 .nav-bottom-hide {
@@ -139,6 +135,10 @@ nav {
 #projects, #skills {
   background-color: $opaque-gray;
   padding-top: 20px;
+}
+
+#skills {
+  padding-bottom: 50px;
 }
 
 #projects-container {
@@ -224,34 +224,6 @@ nav {
     }
   }
 
-  i {
-    color: white;
-    font-size: 50px;
-    margin: 20px;
-  }
-
-  img {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .skills-text, .project-links {
-    opacity: 0;
-    height: 0;
-    margin: 0;
-    transition: all 0.3s;
-    display: none;
-
-    p {
-      height: 0;
-      margin: 0;
-    }
-
-    a {
-      height: 0;
-    }
-  }
-
   @media screen and (min-width: 601px) {
     &:hover {
       border: 1px solid white;
@@ -267,27 +239,10 @@ nav {
       h3, p a {
         text-decoration: underline;
       }
-  
-      .skills-text, .project-links {
-        opacity: 1;
-        height: 100%;
-        display: block;
-        transition: all 1s;
-
-        p {
-          height: initial;
-          margin: 20px;
-        }
-
-        a {
-          height: initial;
-        }
-      }
     }
   }
 
   @media screen and (max-width: 600px) {
-    padding: 20px;
     margin: 20px;
     border: 1px solid white;
 
@@ -299,32 +254,37 @@ nav {
       border: 1px solid white;
     }
 
-    i {
-      margin: 10px;
-    }
-
-    img {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
     h3, p a {
       text-decoration: underline;
     }
+  }
+}
 
-    .skills-text, .project-links {
-      opacity: 1;
-      height: 100%;
+.project-tech {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
 
-      p {
-        height: initial;
-        margin: 20px;
-      }
+  i, img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-      a {
-        height: initial;
-      }
-    }
+  i {
+    color: white;
+    font-size: 50px;
+  }
+
+  img {
+    height: 45px;
+  }
+
+  span {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
@@ -370,7 +330,6 @@ p {
   justify-content: center;
   color: white;
   text-align: center;
-  margin-bottom: 100px;
 }
 
 .skills-group {
@@ -408,22 +367,14 @@ p {
     transition: all 0.3s;
     z-index: -1;
   }
-
-  i {
-    color: white;
-    font-size: 50px;
-    margin: 20px;
-  }
   
   h3 {
     font-size: 30px;
   }
 
-  p {
-    opacity: 0;
-    height: 0;
-    transition: all 0.3s;
-    display: none;
+  i, img {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   @media screen and (min-width: 601px) {
@@ -437,19 +388,7 @@ p {
       &:after {
         border: 1px solid white;
       }
-
-      p {
-        opacity: 1;
-        height: 100%;
-        transition: all 0.3s;
-        display: block;
-      }
     }
-  }
-
-  img {
-    margin-left: 20px;
-    margin-right: 20px;
   }
   
   @media screen and (max-width: 600px) {
@@ -463,22 +402,6 @@ p {
 
     &:after {
       border: 1px solid white;
-    }
-
-    p {
-      opacity: 1;
-      height: 100%;
-      transition: all 0.3s;
-      display: block;
-    }
-
-    i {
-      margin: 10px;
-    }
-
-    img {
-      margin-left: 10px;
-      margin-right: 10px;
     }
   }
 }

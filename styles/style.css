@@ -68,6 +68,7 @@ nav #home {
   background: #343a40;
   width: 180px;
 }
+
 .nav-bottom-hide {
   display: none;
 }
@@ -115,6 +116,10 @@ nav #home {
 #projects, #skills {
   background-color: rgba(41, 49, 51, 0.9);
   padding-top: 20px;
+}
+
+#skills {
+  padding-bottom: 50px;
 }
 
 #projects-container {
@@ -191,29 +196,6 @@ nav #home {
   margin-left: 0;
   margin-right: 0;
 }
-.project-tile i {
-  color: white;
-  font-size: 50px;
-  margin: 20px;
-}
-.project-tile img {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.project-tile .skills-text, .project-tile .project-links {
-  opacity: 0;
-  height: 0;
-  margin: 0;
-  transition: all 0.3s;
-  display: none;
-}
-.project-tile .skills-text p, .project-tile .project-links p {
-  height: 0;
-  margin: 0;
-}
-.project-tile .skills-text a, .project-tile .project-links a {
-  height: 0;
-}
 @media screen and (min-width: 601px) {
   .project-tile:hover {
     border: 1px solid white;
@@ -227,23 +209,9 @@ nav #home {
   .project-tile:hover h3, .project-tile:hover p a {
     text-decoration: underline;
   }
-  .project-tile:hover .skills-text, .project-tile:hover .project-links {
-    opacity: 1;
-    height: 100%;
-    display: block;
-    transition: all 1s;
-  }
-  .project-tile:hover .skills-text p, .project-tile:hover .project-links p {
-    height: initial;
-    margin: 20px;
-  }
-  .project-tile:hover .skills-text a, .project-tile:hover .project-links a {
-    height: initial;
-  }
 }
 @media screen and (max-width: 600px) {
   .project-tile {
-    padding: 20px;
     margin: 20px;
     border: 1px solid white;
   }
@@ -253,27 +221,33 @@ nav #home {
   .project-tile:after {
     border: 1px solid white;
   }
-  .project-tile i {
-    margin: 10px;
-  }
-  .project-tile img {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
   .project-tile h3, .project-tile p a {
     text-decoration: underline;
   }
-  .project-tile .skills-text, .project-tile .project-links {
-    opacity: 1;
-    height: 100%;
-  }
-  .project-tile .skills-text p, .project-tile .project-links p {
-    height: initial;
-    margin: 20px;
-  }
-  .project-tile .skills-text a, .project-tile .project-links a {
-    height: initial;
-  }
+}
+
+.project-tech {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+}
+.project-tech i, .project-tech img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.project-tech i {
+  color: white;
+  font-size: 50px;
+}
+.project-tech img {
+  height: 45px;
+}
+.project-tech span {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .project-description {
@@ -318,7 +292,6 @@ p {
   justify-content: center;
   color: white;
   text-align: center;
-  margin-bottom: 100px;
 }
 
 .skills-group {
@@ -355,19 +328,12 @@ p {
   transition: all 0.3s;
   z-index: -1;
 }
-.skills-group i {
-  color: white;
-  font-size: 50px;
-  margin: 20px;
-}
 .skills-group h3 {
   font-size: 30px;
 }
-.skills-group p {
-  opacity: 0;
-  height: 0;
-  transition: all 0.3s;
-  display: none;
+.skills-group i, .skills-group img {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 @media screen and (min-width: 601px) {
   .skills-group:hover {
@@ -379,16 +345,6 @@ p {
   .skills-group:hover:after {
     border: 1px solid white;
   }
-  .skills-group:hover p {
-    opacity: 1;
-    height: 100%;
-    transition: all 0.3s;
-    display: block;
-  }
-}
-.skills-group img {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 @media screen and (max-width: 600px) {
   .skills-group {
@@ -401,19 +357,6 @@ p {
   }
   .skills-group:after {
     border: 1px solid white;
-  }
-  .skills-group p {
-    opacity: 1;
-    height: 100%;
-    transition: all 0.3s;
-    display: block;
-  }
-  .skills-group i {
-    margin: 10px;
-  }
-  .skills-group img {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
