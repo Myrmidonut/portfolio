@@ -206,9 +206,6 @@ nav #home {
   .project-tile:hover:after {
     border: 1px solid white;
   }
-  .project-tile:hover h3, .project-tile:hover p a {
-    text-decoration: underline;
-  }
 }
 @media screen and (max-width: 600px) {
   .project-tile {
@@ -220,9 +217,6 @@ nav #home {
   }
   .project-tile:after {
     border: 1px solid white;
-  }
-  .project-tile h3, .project-tile p a {
-    text-decoration: underline;
   }
 }
 
@@ -240,6 +234,7 @@ nav #home {
 .project-tech i {
   color: white;
   font-size: 50px;
+  height: 50px;
 }
 .project-tech img {
   height: 45px;
@@ -370,17 +365,15 @@ footer {
   bottom: 0;
   background: #343a40;
   width: 100%;
-  color: white;
   height: 50px;
-  text-align: center;
-  line-height: 50px;
   z-index: 10;
 }
 footer a {
-  display: inline-block;
-  width: 100%;
-  color: white;
-  font-size: 20px;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.3s;
 }
 footer a:hover {

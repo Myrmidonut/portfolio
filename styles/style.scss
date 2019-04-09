@@ -237,7 +237,7 @@ nav {
       }
   
       h3, p a {
-        text-decoration: underline;
+        //text-decoration: underline;
       }
     }
   }
@@ -255,7 +255,7 @@ nav {
     }
 
     h3, p a {
-      text-decoration: underline;
+      //text-decoration: underline;
     }
   }
 }
@@ -275,6 +275,7 @@ nav {
   i {
     color: white;
     font-size: 50px;
+    height: 50px;
   }
 
   img {
@@ -416,17 +417,15 @@ footer {
   bottom: 0;
   background: $light-gray;
   width: 100%;
-  color: white;
   height: 50px;
-  text-align: center;
-  line-height: 50px;
   z-index: 10;
 
   a {
-    display: inline-block;
-    width: 100%;
-    color: white;
-    font-size: 20px;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.3s;
 
     &:hover {
