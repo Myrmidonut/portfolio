@@ -156,6 +156,45 @@ nav {
   }
 }
 
+.project-github {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+
+  a {
+    display: inline-block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  &:hover {
+    background-color: $dark-gray;
+  }
+}
+
+.project-links {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    a {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 100%;
+      display: inline-block;
+      transition: all 0.3s;
+  
+      &:hover {
+        background-color: $dark-gray;
+      }
+    }
+  }
+}
+
 #fcc-introduction {
   margin: 20px;
   text-align: center;
@@ -174,7 +213,7 @@ nav {
   transition: all 0.3s;
   color: white;
   padding: 20px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -224,6 +263,18 @@ nav {
     }
   }
 
+  .project-link {
+    transition: all 0.3s;
+
+    p {
+      padding: 0 5px 5px 5px;
+    }
+
+    &:hover {
+      background-color: $dark-gray;
+    }
+  }
+
   @media screen and (min-width: 601px) {
     &:hover {
       border: 1px solid white;
@@ -234,10 +285,6 @@ nav {
 
       &:after {
         border: 1px solid white;
-      }
-  
-      h3, p a {
-        //text-decoration: underline;
       }
     }
   }
@@ -252,10 +299,6 @@ nav {
 
     &:after {
       border: 1px solid white;
-    }
-
-    h3, p a {
-      //text-decoration: underline;
     }
   }
 }

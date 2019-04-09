@@ -134,6 +134,40 @@ nav #home {
   color: white;
 }
 
+.project-github {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+.project-github a {
+  display: inline-block;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.project-github:hover {
+  background-color: #101314;
+}
+
+.project-links {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.project-links p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.project-links p a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.project-links p a:hover {
+  background-color: #101314;
+}
+
 #fcc-introduction {
   margin: 20px;
   text-align: center;
@@ -151,7 +185,7 @@ nav #home {
   transition: all 0.3s;
   color: white;
   padding: 20px;
-  padding-bottom: 0;
+  padding-bottom: 5px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -195,6 +229,15 @@ nav #home {
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
+}
+.project-tile .project-link {
+  transition: all 0.3s;
+}
+.project-tile .project-link p {
+  padding: 0 5px 5px 5px;
+}
+.project-tile .project-link:hover {
+  background-color: #101314;
 }
 @media screen and (min-width: 601px) {
   .project-tile:hover {
