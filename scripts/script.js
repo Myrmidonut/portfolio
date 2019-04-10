@@ -66,7 +66,7 @@ function drawCanvas() {
   let titleHeight
 
   if (canvas.width <= 450) {
-    titleHeight = canvas.width / 8//7
+    titleHeight = canvas.width / 8
   } else {
     titleHeight = canvas.height / 10
   }
@@ -86,7 +86,7 @@ function drawCanvas() {
   let subtitleHeight
 
   if (canvas.width <= 450) {
-    subtitleHeight = canvas.width / 17//13
+    subtitleHeight = canvas.width / 17
   } else {
     subtitleHeight = canvas.height / 20
   }

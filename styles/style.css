@@ -49,8 +49,10 @@ nav a {
   text-decoration: none;
   transition: all 0.3s;
 }
-nav a:hover {
-  background-color: #101314;
+@media screen and (min-width: 700px) {
+  nav a:hover {
+    background-color: #101314;
+  }
 }
 nav #home {
   font-size: 35px;
@@ -83,7 +85,6 @@ nav #home {
 
 #burger {
   display: none;
-  font-size: 25px;
   padding-left: 14px;
   padding-right: 14px;
 }
@@ -91,6 +92,9 @@ nav #home {
   #burger {
     display: inline-block;
   }
+}
+#burger i {
+  font-size: 25px;
 }
 
 #burger-menu a {
