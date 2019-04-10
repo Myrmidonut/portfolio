@@ -55,7 +55,7 @@ nav #home {
   background: #343a40;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #full-menu {
     display: none;
   }
@@ -78,7 +78,7 @@ nav #home {
   font-size: 25px;
   padding-left: 14px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #burger {
     display: inline-block;
   }
@@ -113,12 +113,12 @@ nav #home {
   color: white;
 }
 
-#projects, #skills {
+#projects, #skills, #contact {
   background-color: rgba(41, 49, 51, 0.9);
   padding-top: 20px;
 }
 
-#skills {
+#contact {
   padding-bottom: 50px;
 }
 
@@ -163,6 +163,9 @@ nav #home {
   width: 100%;
   display: inline-block;
   transition: all 0.3s;
+  font-family: Lato, arial;
+  font-size: 20px;
+  letter-spacing: initial;
 }
 .project-links p a:hover {
   background-color: #101314;
@@ -171,9 +174,15 @@ nav #home {
 #fcc-introduction {
   margin: 20px;
   text-align: center;
+  font-family: Lato, arial;
+  font-size: 20px;
+  letter-spacing: initial;
 }
 #fcc-introduction a {
   color: white;
+  font-family: Lato, arial;
+  font-size: 20px;
+  letter-spacing: initial;
 }
 
 .project-tile {
@@ -235,6 +244,9 @@ nav #home {
 }
 .project-tile .project-link p {
   padding: 0 5px 5px 5px;
+  font-family: Lato, arial;
+  font-size: 20px;
+  letter-spacing: initial;
 }
 .project-tile .project-link:hover {
   background-color: #101314;
@@ -288,6 +300,9 @@ nav #home {
   margin-left: 5px;
   margin-right: 5px;
   flex: 1;
+  font-family: Lato, arial;
+  font-size: 20px;
+  letter-spacing: initial;
 }
 
 .project-description {
@@ -306,11 +321,7 @@ p {
   font-size: 20px;
 }
 
-#skills {
-  padding-bottom: 85px;
-}
-
-#skills h2, #projects h2 {
+#skills h2, #projects h2, #contact h2 {
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
@@ -318,7 +329,7 @@ p {
   font-size: 60px;
 }
 @media screen and (max-width: 400px) {
-  #skills h2, #projects h2 {
+  #skills h2, #projects h2, #contact h2 {
     font-size: 40px;
   }
 }
@@ -398,6 +409,95 @@ p {
   .skills-group:after {
     border: 1px solid white;
   }
+}
+
+#contact-container {
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+  justify-content: center;
+  padding-bottom: 85px;
+}
+#contact-container .contact-group {
+  background: rgba(16, 19, 20, 0.5);
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 300px;
+}
+#contact-container .contact-group:before {
+  border: 1px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -7px;
+  right: -7px;
+  bottom: 5px;
+  transition: all 0.3s;
+  z-index: -1;
+}
+#contact-container .contact-group:after {
+  border: 1px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 5px;
+  right: 5px;
+  bottom: -7px;
+  transition: all 0.3s;
+  z-index: -1;
+}
+@media screen and (min-width: 601px) {
+  #contact-container .contact-group:hover {
+    border: 1px solid white;
+  }
+  #contact-container .contact-group:hover:before {
+    border: 1px solid white;
+  }
+  #contact-container .contact-group:hover:after {
+    border: 1px solid white;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact-container .contact-group {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid white;
+  }
+  #contact-container .contact-group:before {
+    border: 1px solid white;
+  }
+  #contact-container .contact-group:after {
+    border: 1px solid white;
+  }
+}
+#contact-container .contact-group h3 {
+  font-size: 30px;
+  color: white;
+}
+#contact-container .contact-group a {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: Lato, arial;
+  font-size: 20px;
+  letter-spacing: initial;
+  display: inline-block;
+  transition: all 0.3s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  text-decoration: none;
+}
+#contact-container .contact-group a:hover {
+  background-color: #101314;
 }
 
 hr {

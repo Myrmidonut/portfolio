@@ -65,7 +65,7 @@ nav {
 }
 
 #full-menu {
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     display: none;
   }
 
@@ -88,7 +88,7 @@ nav {
   font-size: 25px;
   padding-left: 14px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     display: inline-block;
   }
 }
@@ -132,12 +132,12 @@ nav {
   color: white;
 }
 
-#projects, #skills {
+#projects, #skills, #contact {
   background-color: $opaque-gray;
   padding-top: 20px;
 }
 
-#skills {
+#contact {
   padding-bottom: 50px;
 }
 
@@ -187,6 +187,9 @@ nav {
       width: 100%;
       display: inline-block;
       transition: all 0.3s;
+      font-family: Lato, arial;
+      font-size: 20px;
+      letter-spacing: initial;
   
       &:hover {
         background-color: $dark-gray;
@@ -198,9 +201,15 @@ nav {
 #fcc-introduction {
   margin: 20px;
   text-align: center;
+  font-family: Lato, arial;
+  font-size: 20px;
+  letter-spacing: initial;
 
   a {
     color: white;
+    font-family: Lato, arial;
+    font-size: 20px;
+    letter-spacing: initial;
   }
 }
 
@@ -268,6 +277,9 @@ nav {
 
     p {
       padding: 0 5px 5px 5px;
+      font-family: Lato, arial;
+      font-size: 20px;
+      letter-spacing: initial;
     }
 
     &:hover {
@@ -331,6 +343,9 @@ nav {
     margin-left: 5px;
     margin-right: 5px;
     flex: 1;
+    font-family: Lato, arial;
+    font-size: 20px;
+    letter-spacing: initial;
   }
 }
 
@@ -351,11 +366,7 @@ p {
   font-size: 20px;
 }
 
-#skills {
-  padding-bottom: 85px;
-}
-
-#skills h2, #projects h2 {
+#skills h2, #projects h2, #contact h2 {
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
@@ -448,6 +459,105 @@ p {
 
     &:after {
       border: 1px solid white;
+    }
+  }
+}
+
+#contact-container {
+  display: flex;
+  margin: auto;
+  max-width: 1200px;
+  justify-content: center;
+  padding-bottom: 85px;
+
+  .contact-group {
+    background: rgba(16, 19, 20, 0.5);
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 300px;
+
+    &:before {
+      border: 1px solid rgba(0,0,0,0);
+      content: "";
+      display: block;
+      position: absolute;
+      top: 6px;
+      left: -7px;
+      right: -7px;
+      bottom: 5px;
+      transition: all 0.3s;
+      z-index: -1;
+    }
+  
+    &:after {
+      border: 1px solid rgba(0,0,0,0);
+      content: "";
+      display: block;
+      position: absolute;
+      top: -7px;
+      left: 5px;
+      right: 5px;
+      bottom: -7px;
+      transition: all 0.3s;
+      z-index: -1;
+    }
+
+    @media screen and (min-width: 601px) {
+      &:hover {
+        border: 1px solid white;
+  
+        &:before {
+          border: 1px solid white;
+        }
+  
+        &:after {
+          border: 1px solid white;
+        }
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid white;
+  
+      &:before {
+        border: 1px solid white;
+      }
+  
+      &:after {
+        border: 1px solid white;
+      }
+    }
+
+    h3 {
+      font-size: 30px;
+      color: white;
+    }
+
+    a {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: white;
+      font-family: Lato, arial;
+      font-size: 20px;
+      letter-spacing: initial;
+      display: inline-block;
+      transition: all 0.3s;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 100%;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $dark-gray;
+      }
     }
   }
 }
