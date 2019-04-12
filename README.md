@@ -25,6 +25,7 @@ https://www.frederikfunke.com
    * Laravel
    * Django
    * Express
+   * Rails
    * Mongoose
    * Passport
 
