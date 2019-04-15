@@ -2,6 +2,7 @@
 const burger = document.querySelector("#burger")
 const navBottom = document.querySelector("#nav-bottom")
 const burgerMenuLink = document.querySelectorAll(".burger-menu-link");
+const homeMenuLink = document.querySelector(".home-menu-link")
 
 burger.addEventListener("click", e => {
   e.preventDefault()
@@ -12,6 +13,10 @@ burgerMenuLink.forEach(e => {
   e.addEventListener("click", () => {
     navBottom.classList.toggle("nav-bottom-hide")
   })
+})
+
+homeMenuLink.addEventListener("click", () => {
+  navBottom.classList.add("nav-bottom-hide")
 })
 
 // CANVAS

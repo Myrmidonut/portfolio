@@ -87,10 +87,16 @@ nav {
 #nav-bottom {
   background: $light-gray;
   width: 180px;
+  transition: all 0.1s;
+  transform-origin: top;
+
+  @media screen and (min-width: 701px) {
+    display: none;
+  }
 }
 
 .nav-bottom-hide {
-  display: none;
+  transform: scaleY(0);
 }
 
 #burger {

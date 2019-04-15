@@ -77,10 +77,17 @@ nav #home {
 #nav-bottom {
   background: #343a40;
   width: 180px;
+  transition: all 0.1s;
+  transform-origin: top;
+}
+@media screen and (min-width: 701px) {
+  #nav-bottom {
+    display: none;
+  }
 }
 
 .nav-bottom-hide {
-  display: none;
+  transform: scaleY(0);
 }
 
 #burger {
